@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap'); /* 'Noto Sans', sans-serif; */
+
+
+.footer{
+  padding: 20px 0;
+  background-color: #1f1c33;
+  color: #b9b9b9;
+  font-family: 'Noto Sans', sans-serif;;
+}
+.container{ 
+  max-width: 1200px;
+}
+
+.item{
+  margin: 16px 0;
+}
+
+
+
+#info{
+  display: flex;
+}
+
+.item__list{
+  list-style-type: none;
+  margin-right: 40px;
+}
+
+.item__list li{
+  margin-bottom: 14px;
+  font-size: 18px;
+}
+
+
+
+#social{
+  display: flex;
+  align-items: center;
+}
+
+.social__icon{
+  height: 45px;
+  margin-right: 15px;
+}
+
+#trustpilot-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid rgb(20, 104, 20);
+  border-radius: 30px;
+  font-size: 13px;
+  transition: .3s;
+}
+
+#trustpilot-container:hover{
+  background-color: #10093b;
+  border: 2px solid rgb(18, 202, 18);
+}
+
+#trustpilot-container p{
+  margin: 2px 5px;
+}
+
+#trustpilot-container img{
+  height: 50px;
+  width: 80px;
+}
+
+
+#copyright{
+  font-size: 12px;
+}

@@ -1,0 +1,47 @@
+
+.nav-menu{
+  display: flex;
+}
+
+.nav-menu__item{
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-left: 40px;
+}
+
+.nav-menu-item__link{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.nav-menu__item a:hover{
+  opacity: 0.7;
+}
+
+
+.nav-menu-item__icon{
+  height: 40px;
+}
+
+#wallet-plus {
+  position: absolute;
+  top: 2px;
+  right: -8px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #968f8f;
+  display: flex;
+  justify-content: center;
+  
+  justify-content: center;
+  font-size: 20px;
+  font-weight: bold;
+  opacity: 0.8;
+}
+
