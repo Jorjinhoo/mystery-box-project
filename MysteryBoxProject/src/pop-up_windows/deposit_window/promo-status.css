@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap'); /* 'Noto Sans', sans-serif; */
 
 .promo-status-container {
-  position: absolute;
+  position: fixed;
   top: 20px;
   right: 20px;
   height: 50px;
@@ -14,20 +14,31 @@
   font-family: 'Noto Sans', sans-serif;
   transition: 1s;
   pointer-events: none;
-}
-
-.promo-is-valid{
-  background-color: green;
+  background-color: rgb(3, 172, 3); 
+  opacity: 0; 
 }
 
 .promo-is-not-valid{
-  background-color: red;
+  background-color: rgb(255, 0, 0);
 }
 
-#visible{
-  display: flex;
+
+/* transition */
+
+.promo-status-transition-enter {
+  opacity: 0;
 }
 
-#hidden{
-  display: none;
+.promo-status-transition-enter-active {
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+.promo-status-transition-exit {
+  opacity: 1;
+}
+
+.promo-status-transition-exit-active {
+  opacity: 0;
+  transition: opacity 1s;
 }

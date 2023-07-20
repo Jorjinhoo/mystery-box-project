@@ -1,13 +1,17 @@
 import React, { useEffect, useState } from 'react';
 
+import { CSSTransition } from 'react-transition-group';
+
 import './promo-status.css';
 
 const PromoStatus = ({ promoStatus, setPromoStatus }) => {
 
   const [visible, setVisible] = useState(false);
+  const [promoMessage, setPromoMessage] = useState('');
 
   useEffect(() => {
     if (promoStatus !== null) {
+      if(promoStatus){setPromoMessage('Promo code applied successfully')}else{setPromoMessage('Non-existent promo code')}
       setVisible(true);
       const timer = setTimeout(() => {
         setVisible(false);
@@ -19,10 +23,18 @@ const PromoStatus = ({ promoStatus, setPromoStatus }) => {
   }, [promoStatus, setPromoStatus]);
 
   return (
-    <div className={`promo-status-container ${promoStatus ? 'promo-is-valid' : 'promo-is-not-valid'}`} id={visible ? "visible" : "hidden"}>
-      {visible && promoStatus ? 'Promo code applied successfully' : 'Non-existent promo code'}
-    </div>
-  );
-};
+    <CSSTransition
+      in={visible}
+      timeout={2200}
+      classNames="promo-status-transition"
+      unmountOnExit
+    >
+      <div className={`promo-status-container ${promoStatus ? '' : 'promo-is-not-valid'}`}>
+        {promoMessage}
+      </div>
+    </CSSTransition>
+  )
+}
 
 export default PromoStatus;
+
