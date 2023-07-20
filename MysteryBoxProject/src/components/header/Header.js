@@ -5,13 +5,13 @@ import './header.css';
 import './nav_bar/NavBar.js';
 import NavBar from "./nav_bar/NavBar.js";
 
-const Header = () => {
+const Header = (props) => {
   return(
     <header className="header">
       <div className="container">
         <div className="nav-row">
           <NavLink to="/" className="main-logo">EzzDrop</NavLink>
-          <NavBar />
+          <NavBar onWalletClick={props.onWalletClick} balance={props.balance} />
         </div>
       </div>
     </header>

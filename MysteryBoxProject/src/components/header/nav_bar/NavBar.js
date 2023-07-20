@@ -7,7 +7,8 @@ import account from "../../../img/icons/account.png";
 import wallet from "../../../img/icons/wallet.png";
 import box from "../../../img/icons/box.png";
 
-const NavBar = () => {
+const NavBar = (props) => {
+
   return(
     <div className="nav-menu">
       <div className="nav-menu__item" id="box">
@@ -17,17 +18,15 @@ const NavBar = () => {
         </NavLink>
       </div>
       
-      <div className="nav-menu__item" id="wallet">
-       <a className="nav-menu-item__link">
+      <div className="nav-menu__item nav-menu-item__link" id="wallet" onClick={props.onWalletClick}>
         < img src={wallet} alt="" className="nav-menu-item__icon" />
         <div id="wallet-plus"><p>+</p></div>
-       </a>
       </div>
 
       <div className="nav-menu__item" id="account">
         <NavLink to="/pages/account_page/Account.js" className="nav-menu-item__link">
           < img src={account} alt="" className="nav-menu-item__icon" />
-          <p id="balance">0.00 $</p>
+          <p id="balance">{props.balance} $</p>
         </NavLink>
       </div>
     </div>

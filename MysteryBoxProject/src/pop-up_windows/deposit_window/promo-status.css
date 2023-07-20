@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap'); /* 'Noto Sans', sans-serif; */
+
+.promo-status-container {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  height: 50px;
+  width: 200px;
+  align-items: center;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 20;
+  font-family: 'Noto Sans', sans-serif;
+  transition: 1s;
+  pointer-events: none;
+}
+
+.promo-is-valid{
+  background-color: green;
+}
+
+.promo-is-not-valid{
+  background-color: red;
+}
+
+#visible{
+  display: flex;
+}
+
+#hidden{
+  display: none;
+}

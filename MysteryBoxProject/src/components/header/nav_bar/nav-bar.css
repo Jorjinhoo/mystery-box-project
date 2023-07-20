@@ -19,7 +19,7 @@
   cursor: pointer;
 }
 
-.nav-menu__item a:hover{
+.nav-menu-item__link:hover{
   opacity: 0.7;
 }
 
