@@ -13,7 +13,7 @@ import airpodsMax from "../../img/items_imgs/gadgets/airpods-max.webp";
 
 
 
-const Home = () => {
+const Home = (props) => {
 
   return(
     <main className="main">
@@ -22,53 +22,52 @@ const Home = () => {
       <Box
           caseLogo={case01}
           caseItemLogo={iphones}
+          name={"Iphone Farm"}
+          price={25}
           items={{
             item01: { img: iphones, chance: 10, price: 22 },
             item02: { img: bag, chance: 20, price: 15 },
             item03: { img: jordan, chance: 30, price: 9.99 },
             item04: { img: airpodsMax, chance: 40, price: 2.99 },
           }}
-          name={"Iphone Farm"}
-          price={8.99}
         />
         <Box
           caseLogo={case01}
           caseItemLogo={iphones}
+          name={"Iphone Farm"}
+          price={8.99}
           items={{
             item01: { img: iphones, chance: 10, price: 22 },
             item02: { img: bag, chance: 20, price: 15 },
             item03: { img: jordan, chance: 30, price: 9.99 },
             item04: { img: airpodsMax, chance: 40, price: 2.99 },
           }}
+        />
+       <Box
+          caseLogo={case01}
+          caseItemLogo={iphones}
           name={"Iphone Farm"}
           price={8.99}
+          items={{
+            item01: { img: iphones, chance: 10, price: 22 },
+            item02: { img: bag, chance: 20, price: 15 },
+            item03: { img: jordan, chance: 30, price: 9.99 },
+            item04: { img: airpodsMax, chance: 40, price: 2.99 },
+          }}
         />
         <Box
           caseLogo={case01}
           caseItemLogo={iphones}
+          name={"Iphone Farm"}
+          price={8.99}
           items={{
             item01: { img: iphones, chance: 10, price: 22 },
             item02: { img: bag, chance: 20, price: 15 },
             item03: { img: jordan, chance: 30, price: 9.99 },
             item04: { img: airpodsMax, chance: 40, price: 2.99 },
           }}
-          name={"Iphone Farm"}
-          price={8.99}
-        />
-        <Box
-          caseLogo={case01}
-          caseItemLogo={iphones}
-          items={{
-            item01: { img: iphones, chance: 10, price: 22 },
-            item02: { img: bag, chance: 20, price: 15 },
-            item03: { img: jordan, chance: 30, price: 9.99 },
-            item04: { img: airpodsMax, chance: 40, price: 2.99 },
-          }}
-          name={"Iphone Farm"}
-          price={8.99}
         />
         
-
       </div>
     </main>
   )

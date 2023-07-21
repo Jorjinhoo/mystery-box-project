@@ -6,16 +6,18 @@ import redPointer from "../../img/icons/red-pointer.png";
 
 const CaseScrollTape = (props) =>{
 
-  const { scroll, setScroll } = props;
+  const { scroll, setScroll, casePrice, balance, setBalance } = props;
   const [scrolling, setScrolling] = useState(false);
 
   useEffect(() => {
     let scrollTimer;
 
     if (scroll && !scrolling) {
-      console.log("START SCROLLING");
-      setScrolling(true);
 
+        setBalance(balance - casePrice);
+        console.log("START SCROLLING");
+        setScrolling(true);
+      
       // Выполните здесь ваш код скроллинга или любые другие асинхронные операции,
       // которые занимают время.
 
@@ -35,7 +37,7 @@ const CaseScrollTape = (props) =>{
     // Возвращаем функцию очистки эффекта, чтобы отменить таймер,
     // если компонент размонтируется до завершения скроллинга.
     return () => clearTimeout(scrollTimer);
-  }, [scroll, scrolling, setScroll]);
+  }, [scroll, scrolling, setScroll, casePrice]);
 
 
   return(

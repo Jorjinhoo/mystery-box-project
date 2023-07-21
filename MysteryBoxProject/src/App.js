@@ -33,7 +33,7 @@ function App() {
 
           <Route path="/" element={<Home />} />
           <Route path="/pages/account_page/Account.js" element={<Account />} />
-          <Route path="/pages/case_opening_page/CaseOpeningPage.js" element={<CaseOpeningPage />} />
+          <Route path="/pages/case_opening_page/CaseOpeningPage.js" element={<CaseOpeningPage balance={balance} setBalance={setBalance} />} />
 
         </Routes>
 

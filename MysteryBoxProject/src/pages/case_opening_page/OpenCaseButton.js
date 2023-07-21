@@ -11,7 +11,7 @@ const OpenCaseButton = (props) =>{
 
   return(
     <div className="open-case-button" onClick={handleButtonClick}>
-      Open for 5 $
+      Open for {props.price} $
     </div>
   )
 }
