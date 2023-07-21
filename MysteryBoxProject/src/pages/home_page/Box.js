@@ -13,9 +13,9 @@ const Box = (props) => {
           <img src={props.item} alt="" className="elements-item__item" />
         </div>
         <div className="elements__item">
-          <p1>{props.name}</p1>
+          <p className="elements-item__name">{props.name}</p>
           <div id="price">
-            <p2>{props.price} </p2><p3>$</p3>
+            <p>{props.price} $</p>
           </div>
         </div>
       </NavLink>

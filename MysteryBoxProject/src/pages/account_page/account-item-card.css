@@ -41,7 +41,6 @@
 
 .account-item-card-buttons__button{
   padding: 5px 10px;
-  border: 2px solid rgb(219, 206, 206);
   border-radius: 5px;
   background-color: rgb(18, 122, 18);
   color: #fff;
@@ -50,7 +49,6 @@
 
 .account-item-card-buttons__button:hover{
   opacity: .9;
-  border: 2px solid rgb(255, 255, 255);
 }
 
 #get-item-button{
@@ -74,10 +72,10 @@
   color: #fff;
 }
 
-.item-info p1{
+.item-info__name{
   margin-bottom: 15px;
 }
 
-.item-info p2{
+.item-info__price{
   font-size: 20px;
 }

@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap'); /* 'Noto Sans', sans-serif; */
+
+.open-case-button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  padding: 8px 13px;
+  border-radius: 15px;
+  background-color: #3784dd;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  font-family: 'Noto Sans', sans-serif;
+  transition: .3s ease;
+}
+
+.open-case-button:hover{
+  opacity: .8;
+}

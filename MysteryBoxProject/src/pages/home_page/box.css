@@ -60,13 +60,13 @@
 
 
 
-.elements__item p1{
+.elements-item__name{
   color: #fff;
   font-family: 'Noto Sans', sans-serif;
   transition: .3s;
 }
 
-.box-card:hover .elements__item p1{
+.box-card:hover .elements-item__name{
   font-size: 1.4rem;
 }
 

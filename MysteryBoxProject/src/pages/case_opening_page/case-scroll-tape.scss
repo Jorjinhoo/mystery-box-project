@@ -1,0 +1,57 @@
+
+
+
+.scroll-tape-container{
+  position: relative;
+  margin: 30px 0 30px 0;
+  width: 650px;
+  background-color: rgb(48, 47, 47);
+  border-radius: 10px;
+
+  .tape-pointer{
+    position: absolute;
+    height: 50px;
+    left: 50%;
+    transform: translate3d(-50%, -25px, 0);
+    filter: drop-shadow(0 0 20px #eccfcf);
+    z-index: 2;
+  }
+
+  .scope{
+    overflow: hidden;
+
+
+    &__list{
+      display: inline-flex;
+      list-style: none;
+
+      .scope-list__item{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+        $sizes: 200px;
+        width: $sizes;
+        height: calc($sizes * .8);
+        opacity: .7;
+        transition: .3s ease;
+
+        &:nth-child(2n){
+          background: rgb(22, 22, 21);
+        }
+
+        &.active{
+          opacity: 1;
+
+          img{
+            transform: scale(1.05);
+          }
+        }
+
+        img{
+          height: 100px;
+        }
+      }
+    }
+  }
+}

@@ -11,8 +11,8 @@ const AccountItemCard = (props) =>{
       </div>
       <img src={props.img} alt="" />
       <div className="item-info">
-        <p1>{props.itemName}</p1>
-        <p2>{props.itemPrice} $</p2>
+        <p className="item-info__name">{props.itemName}</p>
+        <p className="item-info__price">{props.itemPrice} $</p>
       </div>
     </div>
   )
