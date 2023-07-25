@@ -35,12 +35,13 @@ const CaseOpeningPage = (props) =>{
   const startScroll = () => {
     (props.balance >= boxData.price) ? setScroll(true) : console.log("make a deposit");
   }
+  
 
 
   return(
     <main className="main" id="case-opening-main">
       <div className="case-opening-container">
-        <CaseScrollTape balance={props.balance} setBalance={props.setBalance} casePrice={boxData.price} item01={boxData.item01} item02={boxData.item02} item03={boxData.item03} item04={boxData.item04} scroll={scroll} setScroll={setScroll} />
+        <CaseScrollTape setBalance={props.setBalance} casePrice={boxData.price} item01={boxData.item01} item02={boxData.item02} item03={boxData.item03} item04={boxData.item04} scroll={scroll} setScroll={setScroll} />
         <OpenCaseButton startScroll={startScroll} price={boxData.price}/>
       </div>
     </main>

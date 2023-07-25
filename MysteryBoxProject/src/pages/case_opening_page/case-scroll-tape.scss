@@ -22,7 +22,11 @@
 
 
     &__list{
+      position: relative;
       display: inline-flex;
+      left: 0;
+      transform: translate3d(0, 0, 0);
+      transition: 5s cubic-bezier(.21,.53,.29,.99);
       list-style: none;
 
       .scope-list__item{
