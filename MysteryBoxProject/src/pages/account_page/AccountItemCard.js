@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./account-item-card.css";
+import "./styles/account-item-card.css";
 
 const AccountItemCard = (props) =>{
   return(

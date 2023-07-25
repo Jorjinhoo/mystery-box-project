@@ -11,11 +11,13 @@ import CaseOpeningPage from "./pages/case_opening_page/CaseOpeningPage.js";
 import DepositWindow from "./pop-up_windows/deposit_window/Deposit.js";
 import PromoStatus from "./pop-up_windows/deposit_window/PromoStatus.js";
 
+
 function App() {
 
   const [visible, setVisible] = useState(false);
   const [balance, setBalance] = useState(0.00);
   const [promoStatus, setPromoStatus] = useState(null);
+  
 
   const handleWalletClick = () => setVisible(true);
   const handleSetBalance = () => setBalance((balance) => balance + 10.5);
@@ -28,6 +30,7 @@ function App() {
 
         <DepositWindow visible={visible} setVisible={setVisible} setBalance={handleSetBalance} setPromoStatus={setPromoStatus} />
         <PromoStatus promoStatus={promoStatus} setPromoStatus={setPromoStatus} />
+        
 
         <Routes>
 

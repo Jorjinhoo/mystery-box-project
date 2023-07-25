@@ -1,8 +1,8 @@
 import React from "react";
 
-import AccountItemCard from "./AccountItemCard";
+import AccountItemCard from "./AccountItemCard.js";
 
-import "./account.css";
+import "./styles/account.css";
 
 import jordan from "../../img/items_imgs/clothing/jordan1-dark.webp";
 

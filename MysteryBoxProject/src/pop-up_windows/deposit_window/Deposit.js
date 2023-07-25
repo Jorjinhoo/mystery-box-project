@@ -2,7 +2,7 @@ import React from "react";
 
 import DepositForm from "./DepositForm.js";
 
-import "./deposit.css";
+import "./styles/deposit.css";
 
 import mastercardvisa from "../../img/icons/mastercard-visa.svg";
 

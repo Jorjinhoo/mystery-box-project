@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import "./deposit-form.css";
+import "./styles/deposit-form.css";
 
 const DepositForm = (props) => {
   const [promoCode, setPromoCode] = useState('');

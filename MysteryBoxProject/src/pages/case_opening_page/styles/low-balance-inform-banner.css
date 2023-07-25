@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap'); /* 'Noto Sans', sans-serif; */
+
+.lbib-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  height: 70px;
+  width: 200px;
+  align-items: center;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 20;
+  font-family: 'Noto Sans', sans-serif;
+  transition: 1s;
+  pointer-events: none;
+  background-color: rgb(255, 0, 0);
+  opacity: 0; 
+}
+
+
+/* transition */
+
+.lbib-transition-enter {
+  opacity: 0;
+}
+
+.lbib-transition-enter-active {
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+.lbib-transition-exit {
+  opacity: 1;
+}
+
+.lbib-transition-exit-active {
+  opacity: 0;
+  transition: opacity 1s;
+}

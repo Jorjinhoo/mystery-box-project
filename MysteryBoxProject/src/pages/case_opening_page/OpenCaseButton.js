@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./open-case-button.css";
+import "./styles/open-case-button.css";
 
 
 const OpenCaseButton = (props) =>{

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 
 import { CSSTransition } from 'react-transition-group';
 
-import './promo-status.css';
+import './styles/promo-status.css';
 
 const PromoStatus = ({ promoStatus, setPromoStatus }) => {
 

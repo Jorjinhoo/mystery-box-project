@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-import "./box.css";
+import "./styles/box.css";
 
 
 const Box = (props) => {

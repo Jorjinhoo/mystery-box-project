@@ -1,43 +1,10 @@
 import React, { useEffect, useState } from "react";
-import "./case-scroll-tape.css";
+
+import "./styles/case-scroll-tape.css";
+
 import redPointer from "../../img/icons/red-pointer.png";
 
-const cells = 41;
-
-function getItem(items) {
-  let item;
-  while (!item) {
-    const chance = Math.floor(Math.random() * 100000); // Set chance from 0.001 to 100
-    items.forEach((el) => {
-      if (el.chance > chance && !item) item = el;
-    });
-  }
-  return item;
-}
-
-function generateTapeItems(items){
-  const list = document.querySelector(".scope__list");
-  
-  if (list) {
-    list.remove();
-  }
-
-  const newUl = document.createElement("ul");
-  newUl.classList.add("scope__list");
-  document.querySelector(".scope").appendChild(newUl);
-
-  for (let i = 0; i < cells; i++) {
-    const item = getItem(items);
-
-    const li = document.createElement("li");
-    li.setAttribute("data-item", JSON.stringify(item)); // Item id
-    li.classList.add("scope-list__item");
-    li.innerHTML = `<img src="${item.img}" alt="" />`;
-
-    newUl.appendChild(li);
-  }
-}
-
+import generateTapeItems from "./scroll-tape-functions/generate-tape-items";
 
 
 const CaseScrollTape = (props) => {
@@ -60,7 +27,7 @@ const CaseScrollTape = (props) => {
       setScrolling(true);
       console.log("START SCROLLING");
 
-      generateTapeItems(items);
+      generateTapeItems(items, 41);
       const list = document.querySelector(".scope__list");
       
       setTimeout(() => {
@@ -93,13 +60,13 @@ const CaseScrollTape = (props) => {
             {props.item01 && <img src={props.item01.img} alt="" />}
           </li>
           <li className="scope-list__item">
-            {props.item01 && <img src={props.item01.img} alt="" />}
+            {props.item02 && <img src={props.item02.img} alt="" />}
           </li>
           <li className="scope-list__item">
-            {props.item01 && <img src={props.item01.img} alt="" />}
+            {props.item03 && <img src={props.item03.img} alt="" />}
           </li>
           <li className="scope-list__item">
-            {props.item01 && <img src={props.item01.img} alt="" />}
+            {props.item04 && <img src={props.item04.img} alt="" />}
           </li>
         </ul>
       </div>

@@ -3,13 +3,15 @@ import { useLocation } from "react-router-dom";
 
 import CaseScrollTape from "./CaseScrollTape.js";
 import OpenCaseButton from "./OpenCaseButton.js";
+import LowBalanceInformBanner from "./LowBalanceInformBanner.js";
 
-import "./case-opening-page.css";
+import "./styles/case-opening-page.css";
 
 const CaseOpeningPage = (props) =>{
 
   const [scroll, setScroll] = useState(false);
   const [scrollingButtonLock, setScrollingButtonLock] = useState(false);
+  const [lowBalanceInform, setLowBalanceInform] = useState(false);
 
   const [boxData, setBoxData] = useState({});
   const location = useLocation();
@@ -35,31 +37,39 @@ const CaseOpeningPage = (props) =>{
 
 
   const startScroll = () => {
-    console.log(scroll);
-    if(scrollingButtonLock){
+    if (scrollingButtonLock) {
       return;
-    }else{
+    } else {
       setScrollingButtonLock(true);
-      (props.balance >= boxData.price) ? setScroll(true) : console.log("make a deposit");
+      if (props.balance >= boxData.price) {
+        setScroll(true); 
+      } else {
+        setLowBalanceInform(true); 
+      }
       setScrollingButtonLock(false);
     }
-  }
+  };
 
 
-  return(
+  return (
     <main className="main" id="case-opening-main">
       <div className="case-opening-container">
-        <CaseScrollTape setBalance={props.setBalance} 
-                        casePrice={boxData.price} 
-                        item01={boxData.item01} 
-                        item02={boxData.item02} 
-                        item03={boxData.item03} 
-                        item04={boxData.item04} 
-                        scroll={scroll} 
-                        setScroll={setScroll} />
+        <CaseScrollTape
+          setBalance={props.setBalance}
+          casePrice={boxData.price}
+          item01={boxData.item01}
+          item02={boxData.item02}
+          item03={boxData.item03}
+          item04={boxData.item04}
+          scroll={scroll}
+          setScroll={setScroll}
+        />
 
-        <OpenCaseButton startScroll={startScroll} price={boxData.price}/>
+        <OpenCaseButton startScroll={startScroll} price={boxData.price} />
       </div>
+
+      { lowBalanceInform && ( <LowBalanceInformBanner lowBalanceInform={lowBalanceInform} setLowBalanceInform={setLowBalanceInform} />) }
+
     </main>
   )
 }
