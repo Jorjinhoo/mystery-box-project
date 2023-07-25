@@ -15,12 +15,35 @@ function getItem(items) {
   return item;
 }
 
+function generateTapeItems(items){
+  const list = document.querySelector(".scope__list");
+  
+  if (list) {
+    list.remove();
+  }
+
+  const newUl = document.createElement("ul");
+  newUl.classList.add("scope__list");
+  document.querySelector(".scope").appendChild(newUl);
+
+  for (let i = 0; i < cells; i++) {
+    const item = getItem(items);
+
+    const li = document.createElement("li");
+    li.setAttribute("data-item", JSON.stringify(item)); // Item id
+    li.classList.add("scope-list__item");
+    li.innerHTML = `<img src="${item.img}" alt="" />`;
+
+    newUl.appendChild(li);
+  }
+}
 
 
 
 const CaseScrollTape = (props) => {
 
   const { scroll, setScroll, casePrice, setBalance } = props;
+
   const [scrolling, setScrolling] = useState(false);
 
   const items = [
@@ -31,58 +54,36 @@ const CaseScrollTape = (props) => {
   ];
 
   useEffect(() => {
-    let scrollTimer;
-
     if (scroll && !scrolling) {
-      setBalance((prevBalance) => prevBalance - casePrice);
-      console.log("START SCROLLING");
-      setScrolling(true);
-
-      const list = document.querySelector(".scope__list");
-      list.style.left = "50%";
-      list.style.transform = "translate3d(-50%, 0, 0)";
-      list.innerHTML = ""; // Clear previous items
-
-      for (let i = 0; i < cells; i++) {
-        const item = getItem(items);
-
-        const li = document.createElement("li");
-        li.setAttribute("data-item", JSON.stringify(item)); // Item id
-        li.classList.add("scope-list__item");
-        li.innerHTML = `<img src="${item.img}" alt="" />`;
-
-        list.append(li);
-      }
-
-      const item = list.querySelector("li:nth-child(21)"); // Selecting the middle item
-
-      const handleTransitionEnd = () => {
-        item.classList.add("active");
-        const winnerItemData = JSON.parse(item.getAttribute("data-item"));
         
-        console.log("Winner:", winnerItemData); // Do something with the winner data
+      setBalance((prevBalance) => prevBalance - casePrice);
+      setScrolling(true);
+      console.log("START SCROLLING");
 
+      generateTapeItems(items);
+      const list = document.querySelector(".scope__list");
+      
+      setTimeout(() => {
+        list.style.left = "50%";
+        list.style.transform = "translate3d(-50%, 0, 0)";
+      }, 0);
 
-      };
+        const handleTransitionEnd = () => {
+          item.classList.add("active");
+          const winnerItemData = JSON.parse(item.getAttribute("data-item"));
+          console.log("Winner:", winnerItemData); // Do something with the winner data
+  
+          setScroll(false);
+          setScrolling(false);
+        };
 
-      list.addEventListener("transitionend", handleTransitionEnd);
+        const item = list.querySelector("li:nth-child(21)"); // Selecting the middle item
 
-
-      const scrollDuration = 5000; // Scroll duration in milliseconds
-      scrollTimer = setTimeout(() => {
-        console.log(scrolling);
-        console.log(scroll);
-
-        setScrolling(false);
-        setScroll();
-      }, scrollDuration);
+        list.addEventListener("transitionend", handleTransitionEnd);
     }
-
-    return () => {
-      clearTimeout(scrollTimer); // Clear the timer if the component unmounts before the scrolling is finished
-    };
-  }, [scroll, scrolling, setScroll, casePrice, setBalance, items]);
-
+  }, [scroll]);
+      
+    
   return (
     <div className="scroll-tape-container">
       <img src={redPointer} alt="" className="tape-pointer" />
@@ -107,4 +108,3 @@ const CaseScrollTape = (props) => {
 };
 
 export default CaseScrollTape;
-
