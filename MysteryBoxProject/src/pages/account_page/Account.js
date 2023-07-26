@@ -43,7 +43,7 @@ const Account = (props) =>{
             img={item.img}
             itemName={item.name}
             itemPrice={item.price}
-            sellAccountItem={props.sellAccountItem}
+            sellAccountItem={() => props.sellAccountItem(item.price, index)}
           />
         ))}
       </div>

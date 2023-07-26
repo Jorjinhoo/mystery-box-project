@@ -41,8 +41,8 @@ const Home = () => {
           name={"Easy Dior"}
           price={5}
           items={{
-            item01: { img: iphones, chance: 15, price: 50, name: "Iphone 14 PRO MAX" },
-            item02: { img: bag, chance: 16, price: 100, name: "Dior Bag" },
+            item01: { img: bag, chance: 15, price: 100, name: "Dior Bag" },
+            item02: { img: iphones, chance: 16, price: 50, name: "Iphone 14 PRO MAX" },
             item03: { img: jordan, chance: 29, price: 9.99, name: "Jordan 1 Dark Mocha" },
             item04: { img: airpodsMax, chance: 40, price: 2.99, name: "Airpods Max" },
           }}

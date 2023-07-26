@@ -4,6 +4,7 @@ import { useLocation } from "react-router-dom";
 import CaseScrollTape from "./CaseScrollTape.js";
 import OpenCaseButton from "./OpenCaseButton.js";
 import LowBalanceInformBanner from "./LowBalanceInformBanner.js";
+import ContentItemCard from "./ContentItemCard.js";
 
 import "./styles/case-opening-page.css";
 
@@ -56,7 +57,7 @@ const CaseOpeningPage = (props) =>{
 
   return (
     <main className="main" id="case-opening-main">
-      <div className="case-opening-container">
+      <div className="case-opening-container" id="scroll-tape-container">
         <CaseScrollTape
           setBalance={props.setBalance}
           casePrice={boxData.price}
@@ -70,6 +71,15 @@ const CaseOpeningPage = (props) =>{
         />
 
         <OpenCaseButton startScroll={startScroll} price={boxData.price} />
+      </div>
+      <div className="case-opening-container">
+        <h2 className="case-content-title">CASE CONTENT</h2>
+        <div className="case-content">
+          <ContentItemCard item={boxData.item01} />
+          <ContentItemCard item={boxData.item02} />
+          <ContentItemCard item={boxData.item03} />
+          <ContentItemCard item={boxData.item04} />
+        </div>
       </div>
 
       { lowBalanceInform && ( <LowBalanceInformBanner lowBalanceInform={lowBalanceInform} setLowBalanceInform={setLowBalanceInform} />) }
