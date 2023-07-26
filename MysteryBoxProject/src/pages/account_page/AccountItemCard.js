@@ -6,8 +6,8 @@ const AccountItemCard = (props) =>{
   return(
     <div className="account-item-card">
       <div className="account-item-card__buttons">
-        <a href="/mimiammu" className="account-item-card-buttons__button" id="get-item-button">Withdraw</a>
-        <a href="/mimimamu" className="account-item-card-buttons__button" id="sell-item-button">Sell</a>
+        <div className="account-item-card-buttons__button" id="get-item-button">Withdraw</div>
+        <div className="account-item-card-buttons__button" id="sell-item-button" onClick={() => props.sellAccountItem(props.itemPrice, props.key)}>Sell</div>
       </div>
       <img src={props.img} alt="" />
       <div className="item-info">

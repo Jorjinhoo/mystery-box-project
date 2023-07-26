@@ -45,6 +45,7 @@
   background-color: rgb(18, 122, 18);
   color: #fff;
   transition: .3s;
+  cursor: pointer;
 }
 
 .account-item-card-buttons__button:hover{
