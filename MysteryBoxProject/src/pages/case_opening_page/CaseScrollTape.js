@@ -12,18 +12,18 @@ const CaseScrollTape = (props) => {
   const { scroll, setScroll, casePrice, setBalance } = props;
 
   const [scrolling, setScrolling] = useState(false);
+  
 
   const items = [
-    { price: props.item01?.price, img: props.item01?.img, chance: props.item01?.chance },
-    { price: props.item02?.price, img: props.item02?.img, chance: props.item02?.chance },
-    { price: props.item03?.price, img: props.item03?.img, chance: props.item03?.chance },
-    { price: props.item04?.price, img: props.item04?.img, chance: props.item04?.chance },
+    { price: props.item01?.price, img: props.item01?.img, name: props.item01?.name, chance: props.item01?.chance },
+    { price: props.item02?.price, img: props.item02?.img, name: props.item02?.name, chance: props.item02?.chance },
+    { price: props.item03?.price, img: props.item03?.img, name: props.item03?.name, chance: props.item03?.chance },
+    { price: props.item04?.price, img: props.item04?.img, name: props.item04?.name, chance: props.item04?.chance },
   ];
 
   useEffect(() => {
     if (scroll && !scrolling) {
         
-      setBalance((prevBalance) => prevBalance - casePrice);
       setScrolling(true);
       console.log("START SCROLLING");
 
@@ -35,19 +35,32 @@ const CaseScrollTape = (props) => {
         list.style.transform = "translate3d(-50%, 0, 0)";
       }, 0);
 
-        const handleTransitionEnd = () => {
-          item.classList.add("active");
-          const winnerItemData = JSON.parse(item.getAttribute("data-item"));
-          console.log("Winner:", winnerItemData); // Do something with the winner data
+      const handleTransitionEnd = () => {
+          
+        item.classList.add("active");
+        const winnerItemData = JSON.parse(item.getAttribute("data-item"));
+        console.log("Winner:", winnerItemData);
   
-          setScroll(false);
-          setScrolling(false);
-        };
+        props.addItemToAccount(winnerItemData);
+        setBalance((prevBalance) => prevBalance - casePrice);
+  
+        setScroll(false);
+        setScrolling(false);
+            
+  
+        list.removeEventListener("transitionend", handleTransitionEnd);
+          
+      };
 
         const item = list.querySelector("li:nth-child(21)"); // Selecting the middle item
 
         list.addEventListener("transitionend", handleTransitionEnd);
+
+        return () => {
+          list.removeEventListener("transitionend", handleTransitionEnd);
+        };
     }
+    
   }, [scroll]);
       
     

@@ -2,23 +2,24 @@ import React from "react";
 
 import AccountItemCard from "./AccountItemCard.js";
 
+
 import "./styles/account.css";
 
-import jordan from "../../img/items_imgs/clothing/jordan1-dark.webp";
 
-const Account = () =>{
+const Account = (props) =>{
+
+
   return(
     <main className="main" id="account-main">
       <div className="account-container">
-        <AccountItemCard img={jordan} itemName={"four"} itemPrice={10.99} />
-        <AccountItemCard img={jordan} itemName={"four"} itemPrice={10.99} />
-        <AccountItemCard img={jordan} itemName={"four"} itemPrice={10.99} />
-        <AccountItemCard img={jordan} itemName={"four"} itemPrice={10.99} />
-        <AccountItemCard img={jordan} itemName={"four"} itemPrice={10.99} />
-        <AccountItemCard img={jordan} itemName={"four"} itemPrice={10.99} />
-        <AccountItemCard img={jordan} itemName={"four"} itemPrice={10.99} />
-        <AccountItemCard img={jordan} itemName={"four"} itemPrice={10.99} />
-        <AccountItemCard img={jordan} itemName={"four"} itemPrice={10.99} />
+      {props.accountItems.map((item, index) => (
+          <AccountItemCard
+            key={index}
+            img={item.img}
+            itemName={item.name}
+            itemPrice={item.price}
+          />
+        ))}
       </div>
     </main>
   )

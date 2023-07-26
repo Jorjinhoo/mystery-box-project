@@ -17,10 +17,15 @@ function App() {
   const [visible, setVisible] = useState(false);
   const [balance, setBalance] = useState(0.00);
   const [promoStatus, setPromoStatus] = useState(null);
+  const [accountItems, setAccountItems] = useState([]);
   
 
   const handleWalletClick = () => setVisible(true);
   const handleSetBalance = () => setBalance((balance) => balance + 10.5);
+
+  const addItemToAccount = (itemData) => {
+    setAccountItems((prevItems) => [...prevItems, itemData]);
+  };
 
   return (
     <div className="App">
@@ -35,8 +40,8 @@ function App() {
         <Routes>
 
           <Route path="/" element={<Home />} />
-          <Route path="/pages/account_page/Account.js" element={<Account />} />
-          <Route path="/pages/case_opening_page/CaseOpeningPage.js" element={<CaseOpeningPage balance={balance} setBalance={setBalance} />} />
+          <Route path="/pages/account_page/Account.js" element={<Account accountItems={accountItems} />} />
+          <Route path="/pages/case_opening_page/CaseOpeningPage.js" element={<CaseOpeningPage balance={balance} setBalance={setBalance} addItemToAccount={addItemToAccount} />} />
 
         </Routes>
 

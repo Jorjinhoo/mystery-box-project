@@ -23,48 +23,48 @@ const Home = (props) => {
           caseLogo={case01}
           caseItemLogo={iphones}
           name={"Iphone Farm"}
-          price={25}
+          price={5}
           items={{
-            item01: { img: iphones, chance: 10, price: 22 },
-            item02: { img: bag, chance: 20, price: 15 },
-            item03: { img: jordan, chance: 30, price: 9.99 },
-            item04: { img: airpodsMax, chance: 40, price: 2.99 },
+            item01: { img: iphones, chance: 10, price: 22, name: "Iphone 14 PRO MAX" },
+            item02: { img: bag, chance: 20, price: 15, name: "Dior Bag" },
+            item03: { img: jordan, chance: 30, price: 9.99, name: "Jordan 1 Dark Mocha" },
+            item04: { img: airpodsMax, chance: 40, price: 2.99, name: "Airpods Max" },
           }}
         />
         <Box
           caseLogo={case01}
           caseItemLogo={iphones}
           name={"Iphone Farm"}
-          price={8.99}
+          price={5}
           items={{
-            item01: { img: iphones, chance: 10, price: 22 },
-            item02: { img: bag, chance: 20, price: 15 },
-            item03: { img: jordan, chance: 30, price: 9.99 },
-            item04: { img: airpodsMax, chance: 40, price: 2.99 },
+            item01: { img: iphones, chance: 10, price: 22, name: "Iphone 14 PRO MAX" },
+            item02: { img: bag, chance: 20, price: 15, name: "Dior Bag" },
+            item03: { img: jordan, chance: 30, price: 9.99, name: "Jordan 1 Dark Mocha" },
+            item04: { img: airpodsMax, chance: 40, price: 2.99, name: "Airpods Max" },
           }}
         />
        <Box
           caseLogo={case01}
           caseItemLogo={iphones}
           name={"Iphone Farm"}
-          price={8.99}
+          price={5}
           items={{
-            item01: { img: iphones, chance: 10, price: 22 },
-            item02: { img: bag, chance: 20, price: 15 },
-            item03: { img: jordan, chance: 30, price: 9.99 },
-            item04: { img: airpodsMax, chance: 40, price: 2.99 },
+            item01: { img: iphones, chance: 10, price: 22, name: "Iphone 14 PRO MAX" },
+            item02: { img: bag, chance: 20, price: 15, name: "Dior Bag" },
+            item03: { img: jordan, chance: 30, price: 9.99, name: "Jordan 1 Dark Mocha" },
+            item04: { img: airpodsMax, chance: 40, price: 2.99, name: "Airpods Max" },
           }}
         />
         <Box
           caseLogo={case01}
           caseItemLogo={iphones}
           name={"Iphone Farm"}
-          price={8.99}
+          price={5}
           items={{
-            item01: { img: iphones, chance: 10, price: 22 },
-            item02: { img: bag, chance: 20, price: 15 },
-            item03: { img: jordan, chance: 30, price: 9.99 },
-            item04: { img: airpodsMax, chance: 40, price: 2.99 },
+            item01: { img: iphones, chance: 10, price: 22, name: "Iphone 14 PRO MAX" },
+            item02: { img: bag, chance: 20, price: 15, name: "Dior Bag" },
+            item03: { img: jordan, chance: 30, price: 9.99, name: "Jordan 1 Dark Mocha" },
+            item04: { img: airpodsMax, chance: 40, price: 2.99, name: "Airpods Max" },
           }}
         />
         

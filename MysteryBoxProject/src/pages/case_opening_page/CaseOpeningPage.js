@@ -36,6 +36,9 @@ const CaseOpeningPage = (props) =>{
   }, [location.search]);
 
 
+  
+
+
   const startScroll = () => {
     if (scrollingButtonLock) {
       return;
@@ -63,6 +66,7 @@ const CaseOpeningPage = (props) =>{
           item04={boxData.item04}
           scroll={scroll}
           setScroll={setScroll}
+          addItemToAccount={props.addItemToAccount}
         />
 
         <OpenCaseButton startScroll={startScroll} price={boxData.price} />
