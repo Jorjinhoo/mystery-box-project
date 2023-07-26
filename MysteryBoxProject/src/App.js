@@ -11,6 +11,8 @@ import CaseOpeningPage from "./pages/case_opening_page/CaseOpeningPage.js";
 import DepositWindow from "./pop-up_windows/deposit_window/Deposit.js";
 import PromoStatus from "./pop-up_windows/deposit_window/PromoStatus.js";
 
+import accountLogo from "./img/icons/account.png";
+
 
 function App() {
 
@@ -18,6 +20,7 @@ function App() {
   const [balance, setBalance] = useState(0.00);
   const [promoStatus, setPromoStatus] = useState(null);
   const [accountItems, setAccountItems] = useState([]);
+  const [casesOpened, setCasesOpened] = useState(0);
   
 
   const handleWalletClick = () => setVisible(true);
@@ -26,6 +29,7 @@ function App() {
 
   const addItemToAccount = (itemData) => {
     setAccountItems((prevItems) => [...prevItems, itemData]);
+    setCasesOpened((casesOpened) => casesOpened + 1);
   };
 
   const sellAccountItem = (itemPrice, index) => {
@@ -51,7 +55,7 @@ function App() {
         <Routes>
 
           <Route path="/" element={<Home />} />
-          <Route path="/pages/account_page/Account.js" element={<Account accountItems={accountItems} sellAccountItem={sellAccountItem} />} />
+          <Route path="/pages/account_page/Account.js" element={<Account accountItems={accountItems} sellAccountItem={sellAccountItem} accountLogo={accountLogo} casesOpened={casesOpened} />} />
           <Route path="/pages/case_opening_page/CaseOpeningPage.js" element={<CaseOpeningPage balance={balance} setBalance={setBalance} addItemToAccount={addItemToAccount} />} />
 
         </Routes>

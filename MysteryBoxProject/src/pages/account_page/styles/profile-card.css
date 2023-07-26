@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap'); /* 'Noto Sans', sans-serif; */
+
+#profile-card-container{
+  margin-bottom: 20px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.profile-title{
+  margin: 6px auto;
+  color: #fff;
+}
+
+
+.profile-card__info{
+  display: flex;
+}
+
+.profile-card-info__name{
+  margin: 10px 0 10px 5px;
+  color: #fff;
+}
+
+.profile-card-info__statistics{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10px;
+  padding: 12px;
+  background-color: #4f5577;
+  color: #fff;
+  border-radius: 10px;
+}

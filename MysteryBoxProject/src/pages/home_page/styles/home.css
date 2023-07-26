@@ -3,10 +3,18 @@
   background-color: #080516;
 }
 
+.giveaway-container{
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1380px;
+  display: flex;
+  justify-content: center;
+}
+
 .container-02{
   margin: 0 auto;
   padding: 0 15px;
-  max-width: 1200px;
+  max-width: 1380px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;

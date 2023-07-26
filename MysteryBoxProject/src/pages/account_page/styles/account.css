@@ -1,5 +1,6 @@
 #account-main{
   width: 100%;
+  min-height: 400px;
   background-color: #080516;
   padding: 30px 0;
 }
@@ -13,3 +14,4 @@
   background-color: rgb(27, 30, 31);
   border-radius: 10px;
 }
+
