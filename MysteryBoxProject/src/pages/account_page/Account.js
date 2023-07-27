@@ -36,17 +36,23 @@ const Account = (props) =>{
             <p>Gifts</p>
           </div>
       </div>
-      <div className="account-container" id="account-item-container">
-        {props.accountItems.map((item, index) => (
-          <AccountItemCard
-            key={index}
-            img={item.img}
-            itemName={item.name}
-            itemPrice={item.price}
-            sellAccountItem={() => props.sellAccountItem(item.price, index)}
-          />
-        ))}
-      </div>
+      {activeSwitch === "inventory" ? (
+        <div className="account-container" id="account-item-container">
+          {props.accountItems.map((item, index) => (
+            <AccountItemCard
+              key={index}
+              img={item.img}
+              itemName={item.name}
+              itemPrice={item.price}
+              sellAccountItem={() => props.sellAccountItem(item.price, index)}
+            />
+          ))}
+        </div>
+      ) : (
+        <div className="account-container" id="account-gifts-container">
+          <div className="account-gift-card" style={{ color: 'white', fontSize: '20px', margin: '20px auto', fontFamily: 'unset', fontWeight: '700' }}>There are no gifts</div>
+        </div>
+      )}
     </main>
   )
 }

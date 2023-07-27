@@ -26,7 +26,7 @@ const NavBar = (props) => {
       <div className="nav-menu__item" id="account">
         <NavLink to="/pages/account_page/Account.js" className="nav-menu-item__link">
           < img src={account} alt="" className="nav-menu-item__icon" />
-          <p id="balance">{props.balance} $</p>
+          <p id="balance">{parseFloat(props.balance).toFixed(2)} $</p>
         </NavLink>
       </div>
     </div>

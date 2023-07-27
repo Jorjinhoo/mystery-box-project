@@ -21,7 +21,7 @@
 }
 
 .case-content{
-  margin: 0 auto;
+  margin: 0 auto 50px auto;
   padding: 0 15px;
   max-width: 1400px;
   display: flex;
