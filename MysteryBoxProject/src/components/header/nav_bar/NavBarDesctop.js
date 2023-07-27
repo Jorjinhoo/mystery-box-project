@@ -1,13 +1,13 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-import "./nav-bar.css";
+import "./nav-bar-desctop.css";
 
 import account from "../../../img/icons/account.png";
 import wallet from "../../../img/icons/wallet.png";
 import box from "../../../img/icons/box.png";
 
-const NavBar = (props) => {
+const NavBarDesctop = (props) => {
 
   return(
     <div className="nav-menu">
@@ -33,4 +33,4 @@ const NavBar = (props) => {
   )
 }
 
-export default NavBar;
+export default NavBarDesctop;

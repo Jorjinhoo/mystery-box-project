@@ -1,0 +1,45 @@
+
+#account-mobile {
+  height: 20px;
+}
+
+#balance-mobile {
+  font-size: 13px;
+}
+
+#burger-menu img {
+  height: 25px;
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 50vw;
+  height: 100vh;
+  background-color: rgba(36, 35, 35, 0.952);
+  transform: translateX(200%);
+  z-index: 5;
+  transition: all .4s;
+}
+
+.mobile-menu-active {
+  transform: translateX(100%);
+}
+
+.mobeile-menu__close-icon {
+  position: fixed;
+  top: 30px;
+  margin-left: 40vw;
+  height: 25px;
+}
+
+.mobile-menu__items {
+  list-style: none;
+  margin: 10vh 5vh;
+}
+
+.mobile-menu-items__item {
+  margin-top: 2vh;
+}
+
