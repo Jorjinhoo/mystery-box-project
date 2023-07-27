@@ -7,6 +7,7 @@
   border-radius: 15px;
   border: 1px solid #080516;
   transition: .3s;
+  /* background-color: red; */
 }
 
 .box-card:hover{
@@ -84,3 +85,159 @@
   padding: 5px 9px;
   background-color: #f19d0c;
 }
+
+
+
+
+@media screen and (max-width: 1210px) {
+  .box-card{
+    margin: 15px 15px;
+  }
+
+  .elements{
+    height: 280px;
+    width: 200px;
+  }
+  
+  .elements__item{
+    margin: 15px 15px 0 15px;
+  }
+
+  .elements-item__box{
+    height: 150px;
+  }
+  
+  .elements-item__item{
+    height: 80px;
+  }
+
+  .box-card:hover .elements-item__item{
+    height: 100px;
+  }
+
+  .elements-item__name{
+    
+  }
+  
+  .box-card:hover .elements-item__name{
+    font-size: 1.2rem;
+  }
+  
+  #price{
+    margin: 15px 0 15px 0;
+  }
+  
+  .box-card:hover #price{
+    padding: 4px 8px;
+  }
+}
+
+
+@media screen and (max-width: 960px) {
+  .box-card{
+    margin: 10px 13px;
+    border: none;
+  }
+
+  .box-card:hover{
+    border: none;
+    background-color: initial;
+    box-shadow: initial;
+  }
+
+  .elements{
+    height: 260px;
+    width: 190px;
+  }
+  
+  .elements__item{
+    margin: 13px 13px 0 13px;
+  }
+
+  .elements-item__box{
+    height: 140px;
+  }
+  
+  .elements-item__item{
+    height: 70px;
+  }
+
+  .box-card:hover .elements-item__item{
+    height: 70px;
+  }
+
+  .elements-item__name{
+    font-size: 15px;
+  }
+  
+  .box-card:hover .elements-item__name{
+    font-size: 15px;
+  }
+  
+  #price{
+    margin: 13px 0 8px 0;
+    padding: 3px 6px;
+  }
+  
+  .box-card:hover #price{
+    padding: 3px 6px;
+    background-color: #d18604;
+  }
+}
+
+
+@media screen and (max-width: 680px) {
+  .box-card{
+    margin: 8px 5px;
+  }
+
+  .elements{
+    height: 230px;
+    width: 170px;
+  }
+  
+  .elements__item{
+    margin: 8px 8px 0 8px;
+  }
+
+  .elements-item__box{
+    height: 120px;
+  }
+}
+
+
+@media screen and (max-width: 570px) {
+  .box-card{
+    margin: 10px 8px;
+  }
+
+  .elements{
+    height: 200px;
+    width: 145px;
+  }
+  
+  .elements__item{
+    margin: 10px 10px 0 10px;
+  }
+
+  .elements-item__box{
+    height: 110px;
+  }
+  
+  .elements-item__item{
+    height: 63px;
+  }
+
+  .box-card:hover .elements-item__item{
+    height: 63px;
+  }
+  
+  #price{
+    margin: 13px 0 8px 0;
+    padding: 3px 6px;
+    font-size: 13px;
+  }
+}
+
+
+

@@ -28,3 +28,11 @@
   font-family: 'Noto Sans', sans-serif;
   font-size: 30px;
 }
+
+
+@media screen and (max-width: 1130px) {
+  #container-group-title {
+    margin-top: 30px;
+    font-size: 20px;
+  }
+}

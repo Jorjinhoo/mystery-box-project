@@ -71,3 +71,91 @@
 #copyright{
   font-size: 12px;
 }
+
+
+
+@media  screen and (max-width: 1200px) {
+  .item{
+    margin: 12px 0;
+  }
+  
+  .item__list{
+    margin-right: 30px;
+  }
+  
+  .item__list li{
+    margin-bottom: 12px;
+    font-size: 14px;
+  }
+  
+  .social__icon{
+    height: 35px;
+    margin-right: 11px;
+  }
+  
+  #trustpilot-container{
+    font-size: 11px;
+  }
+  
+  #trustpilot-container p{
+    margin: 1px 2px;
+  }
+  
+  #trustpilot-container img{
+    height: 40px;
+    width: 60px;
+  }
+
+  #text {
+    font-size: 12px;
+  }
+  
+  #copyright{
+    font-size: 10px;
+  }
+}
+
+@media  screen and (max-width: 800px) {
+  .footer{
+    padding: 5px 0;
+  }
+
+  .item{
+    margin: 10px 0;
+  }
+  
+  .item__list{
+    margin-right: 25px;
+  }
+  
+  .item__list li{
+    margin-bottom: 12px;
+    font-size: 12px;
+  }
+  
+  .social__icon{
+    height: 30px;
+  }
+  
+  #text {
+    font-size: 11px;
+  }
+}
+
+@media  screen and (max-width: 1200px) {
+  .item{
+    margin: 10px 0;
+  }
+  
+  .item__list{
+    margin-right: 25px;
+  }
+  
+  .item__list li{
+    font-size: 10px;
+  }
+
+  #text {
+    font-size: 11px;
+  }
+}

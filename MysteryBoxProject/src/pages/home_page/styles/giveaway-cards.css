@@ -61,3 +61,34 @@
   margin-right: 13px;
   transition: .3s;
 }
+
+
+@media screen and (max-width: 1410px) {
+  .giveaway-card {
+    width: 280px;
+    height: 130px;
+  }
+  .giveaway-card__info {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 1210px) {
+  .giveaway-card {
+    width: 260px;
+    height: 110px;
+  }
+  .giveaway-card__info {
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .giveaway-cards-groups__group {
+    justify-content: center; 
+  }
+
+  .giveaway-card {
+    margin-bottom: 8px; 
+  }
+}
