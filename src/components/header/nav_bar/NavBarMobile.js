@@ -16,6 +16,11 @@ const NavBarMobile = (props) => {
     setMobileMenuOpen(!isMobileMenuOpen);
   };
 
+  const handleWalletClick = () => {
+    props.onWalletClick();
+    handleMenuClick();
+  }
+
   return(
     <div className="nav-menu">
       <div className="nav-menu__item" id="account-mobile">
@@ -30,9 +35,9 @@ const NavBarMobile = (props) => {
       <div className={`mobile-menu ${(isMobileMenuOpen) ? "mobile-menu-active" : ""}`}>
         <img src={closeMenu} alt="" onClick={handleMenuClick} className="mobeile-menu__close-icon"/>
         <ul className="mobile-menu__items">
-          <li className="mobile-menu-items__item"><NavLink to={"/pages/account_page/Account.js"}>Account</NavLink></li>
-          <li className="mobile-menu-items__item" onClick={props.onWalletClick}>Deposit</li>
-          <li className="mobile-menu-items__item"><NavLink to={"/"}>Cases</NavLink></li>
+          <li className="mobile-menu-items__item"><NavLink to={"/pages/account_page/Account.js"} onClick={handleMenuClick}>Account</NavLink></li>
+          <li className="mobile-menu-items__item" onClick={handleWalletClick} >Deposit</li>
+          <li className="mobile-menu-items__item"><NavLink to={"/"} onClick={handleMenuClick}>Cases</NavLink></li>
         </ul>
       </div>
     </div>

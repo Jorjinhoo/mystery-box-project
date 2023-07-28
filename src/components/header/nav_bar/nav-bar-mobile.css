@@ -41,5 +41,6 @@
 
 .mobile-menu-items__item {
   margin-top: 2vh;
+  cursor: pointer;
 }
 
