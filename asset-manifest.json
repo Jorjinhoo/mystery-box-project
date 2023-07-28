@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/mystery-box-project/static/css/main.f72f18a9.css",
+    "main.js": "/mystery-box-project/static/js/main.1603e198.js",
+    "static/media/jordan1-chicago.png": "/mystery-box-project/static/media/jordan1-chicago.8142e7f60e57b2c829c5.png",
+    "static/media/dior-white-bag.webp": "/mystery-box-project/static/media/dior-white-bag.58bd5080f067a230832b.webp",
+    "static/media/tnf-puffer.webp": "/mystery-box-project/static/media/tnf-puffer.a5be1848b5e507c373cc.webp",
+    "static/media/jbl-pulse.webp": "/mystery-box-project/static/media/jbl-pulse.40c93a6199c8a220e104.webp",
+    "static/media/airpods-max.webp": "/mystery-box-project/static/media/airpods-max.e215f3114cdc1111412d.webp",
+    "static/media/apple-watch-ultra.webp": "/mystery-box-project/static/media/apple-watch-ultra.4067226c9cbdb01a0f54.webp",
+    "static/media/jbl-go.webp": "/mystery-box-project/static/media/jbl-go.59624822b32abfa00e2c.webp",
+    "static/media/iphones-pmax-all-colours.webp": "/mystery-box-project/static/media/iphones-pmax-all-colours.44e41eba5b9cd3cea885.webp",
+    "static/media/jordan1-dark.webp": "/mystery-box-project/static/media/jordan1-dark.4d494e813c76879e5d04.webp",
+    "static/media/case-01.webp": "/mystery-box-project/static/media/case-01.2162d0f5ca342f2a2f03.webp",
+    "static/media/ps5.webp": "/mystery-box-project/static/media/ps5.8300dbc0ed40b226c200.webp",
+    "static/media/iphone-14-white.webp": "/mystery-box-project/static/media/iphone-14-white.8bf64c53c601b539fa05.webp",
+    "static/media/ipad-pro.jpg": "/mystery-box-project/static/media/ipad-pro.546c720e9288f0efdb1e.jpg",
+    "static/media/mastercard-visa.svg": "/mystery-box-project/static/media/mastercard-visa.45d5786d3a5e5b4885af65a798ab9d72.svg",
+    "index.html": "/mystery-box-project/index.html",
+    "main.f72f18a9.css.map": "/mystery-box-project/static/css/main.f72f18a9.css.map",
+    "main.1603e198.js.map": "/mystery-box-project/static/js/main.1603e198.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f72f18a9.css",
+    "static/js/main.1603e198.js"
+  ]
+}
