@@ -46,3 +46,59 @@
 .scroll-tape-container .scope__list .scope-list__item img {
   height: 100px;
 }
+
+@media screen and (max-width: 1200px) {
+  .scroll-tape-container {
+    width: 650px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .scroll-tape-container {
+    width: 480px;
+    margin: 30px 0 25px 0;
+  }
+  .scroll-tape-container .tape-pointer {
+    height: 40px;
+  }
+  .scroll-tape-container .scope__list .scope-list__item {
+    width: 150px;
+    height: 120px;
+  }
+  .scroll-tape-container .scope__list .scope-list__item img {
+    height: 70px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .scroll-tape-container {
+    width: 300px;
+    margin: 20px 0 18px 0;
+  }
+  .scroll-tape-container .tape-pointer {
+    height: 30px;
+    transform: translate3d(-50%, -18px, 0);
+  }
+  .scroll-tape-container .scope__list .scope-list__item {
+    width: 110px;
+    height: 88px;
+  }
+  .scroll-tape-container .scope__list .scope-list__item img {
+    height: 60px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .scroll-tape-container {
+    width: 200px;
+    margin: 15px 0 14px 0;
+  }
+  .scroll-tape-container .tape-pointer {
+    height: 25px;
+    transform: translate3d(-50%, -15px, 0);
+  }
+  .scroll-tape-container .scope__list .scope-list__item {
+    width: 85px;
+    height: 68px;
+  }
+  .scroll-tape-container .scope__list .scope-list__item img {
+    height: 40px;
+  }
+}

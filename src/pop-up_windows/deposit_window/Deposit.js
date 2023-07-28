@@ -17,9 +17,9 @@ const Deposit = (props) =>{
   return(
     <div className={`deposit-window ${rootClasses}`} onClick={() => props.setVisible(false)}>
       <div className="deposit-window-content" onClick={(e) => e.stopPropagation()}>
-        <h1>Balance top up</h1>
+        <p className="deposit-form-header">Balance top up</p>
         <div className="deposit-element">
-          <div><p>Selected payment method</p><h3>CARD</h3></div>
+          <div className="deposit-element__info"><p>Selected payment method</p><h3>CARD</h3></div>
           <img src={mastercardvisa} alt="" id="card" />
         </div>
         <DepositForm setBalance={props.setBalance} setVisible={props.setVisible} setPromoStatus={props.setPromoStatus} />

@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap'); /* 'Noto Sans', sans-serif; */
 
-#profile-card-container{
+#profile-card-container {
   margin-bottom: 20px;
   height: 200px;
   display: flex;
@@ -8,22 +8,22 @@
   font-family: 'Noto Sans', sans-serif;
 }
 
-.profile-title{
+.profile-title {
   margin: 6px auto;
   color: #fff;
 }
 
 
-.profile-card__info{
+.profile-card__info {
   display: flex;
 }
 
-.profile-card-info__name{
+.profile-card-info__name {
   margin: 10px 0 10px 5px;
   color: #fff;
 }
 
-.profile-card-info__statistics{
+.profile-card-info__statistics {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -33,3 +33,77 @@
   color: #fff;
   border-radius: 10px;
 }
+
+
+@media screen and (max-width: 1250px) {
+  #profile-card-container{
+    margin: 0 20px 20px 20px;
+    height: 170px;
+  }
+
+  .profile-title{
+    font-size: 13px;
+  }
+
+  .profile-card-info__name {
+    font-size: 18px;
+  }
+
+  .profile-card-info__statistics {
+    font-size: 14px;
+  }
+}
+
+
+@media screen and (max-width: 770px) {
+  #profile-card-container{
+    height: 150px;
+  }
+
+  .profile-title{
+    font-size: 10px;
+  }
+
+  .profile-card-info__img {
+    height: 70px;
+    margin-top: 5px;
+  }
+
+  .profile-card-info__name {
+    font-size: 16px;
+  }
+
+  .profile-card-info__statistics {
+    font-size: 12px;
+    height: 8px;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  #profile-card-container{
+    margin: 0 13px 13px 13px;
+    height: 120px;
+  }
+
+  .profile-title{
+    font-size: 7px;
+  }
+
+  .profile-card-info__img {
+    height: 50px;
+    margin-top: 10px;
+  }
+
+  .profile-card-info__name {
+    font-size: 13px;
+  }
+
+  .profile-card-info__statistics {
+    font-size: 10px;
+    height: 6px;
+    padding: 8px;
+  }
+  
+}
+

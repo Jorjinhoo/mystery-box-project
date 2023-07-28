@@ -3,8 +3,8 @@
 
 .account-item-card{
   position: relative;
-  width: 250px;
-  height: 220px;
+  width: 215px;
+  height: 210px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -80,3 +80,118 @@
 .item-info__price{
   font-size: 20px;
 }
+
+
+
+@media screen and (max-width: 1250px) {
+  .account-item-card{
+    width: 150px;
+    height: 180px;
+    margin: 15px 30px 15px 0;
+  }
+  
+  .account-item-card__buttons{
+    font-size: 14px;
+  }
+  
+  .account-item-card-buttons__button{
+    padding: 5px 5px;
+  }
+
+  #get-item-button{
+    margin-right: 13px;
+  }
+  
+  .account-item-card img{
+    padding: 10px 0 20px 0;
+    height: 70px;
+  }
+  
+  .item-info__name{
+    margin-bottom: 10px;
+    font-size: 13px;
+  }
+}
+
+
+@media screen and (max-width: 1165px) {
+  .account-item-card{
+    width: 130px;
+    height: 150px;
+    margin: 8px;
+  }
+  
+  .account-item-card__buttons{
+    font-size: 12px;
+  }
+  
+  .account-item-card-buttons__button{
+    padding: 5px 5px;
+  }
+
+  #get-item-button{
+    margin-right: 10px;
+  }
+  
+  .account-item-card img{
+    padding: 10px 0 20px 0;
+    height: 60px;
+  }
+  
+  .item-info__name{
+    margin-bottom: 9px;
+    font-size: 11px;
+  }
+  
+  .item-info__price{
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 1045px) {
+  .account-item-card{
+    margin: 7px;
+  }
+}
+
+@media screen and (max-width: 799px) {
+  .account-item-card{
+    margin: 12px;
+  }
+}
+
+
+@media screen and (max-width: 695px) {
+  .account-item-card{
+    width: 85px;
+    height: 110px;
+    margin: 10px 4px;
+  }
+  
+  .account-item-card__buttons{
+    font-size: 9px;
+  }
+  
+  .account-item-card-buttons__button{
+    padding: 5px 5px;
+  }
+
+  #get-item-button{
+    margin-right: 4px;
+  }
+  
+  .account-item-card img{
+    padding: 10px 0 20px 0;
+    height: 45px;
+  }
+
+  .item-info__name{
+    margin-bottom: 5px;
+    font-size: 7px;
+  }
+
+  .item-info__price{
+    font-size: 12px;
+  }
+}
+

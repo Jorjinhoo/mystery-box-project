@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap'); /* font-family: 'Kanit', sans-serif; */
 
 
-.case-opening-container{
+.case-opening-container {
   margin: 0 auto;
   padding: 0 15px;
   max-width: 1200px;
@@ -11,20 +11,35 @@
   justify-content: center;
 }
 
-#scroll-tape-container{
+#scroll-tape-container {
   height: 600px;
 }
 
-.case-content-title{
+.case-content-title {
   color: #fff;
   font-family: 'Kanit', sans-serif;
 }
 
-.case-content{
+.case-content {
   margin: 0 auto 50px auto;
   padding: 0 15px;
   max-width: 1400px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   border-radius: 10px;
+}
+
+
+
+@media screen and (max-width: 850px) {
+  #scroll-tape-container {
+    height: 450px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  #scroll-tape-container {
+    height: 300px;
+  }
 }

@@ -37,6 +37,11 @@
   min-width: 400px;
 }
 
+.deposit-form-header{
+  font-size: 35px;
+}
+
+
 .deposit-element{
   display: flex;
   align-items: center;
@@ -54,4 +59,58 @@
 .deposit-element img{
   height: 20px;
   margin-left: 40px;
+}
+
+
+@media screen and (max-width: 500px) {
+  
+  .deposit-window-content{
+    padding: 20px;
+    min-width: 200px;
+  }
+
+  .deposit-form-header{
+    font-size: 25px;
+  }
+  
+  .deposit-element{
+    margin: 18px 0 13px 0;
+    padding: 7px 16px;
+  }
+
+  .deposit-element img{
+    height: 15px;
+    margin-left: 30px;
+  }
+}
+
+
+@media screen and (max-width: 390px) {
+  
+  .deposit-window-content{
+    padding: 10px;
+    min-width: 100px;
+  }
+
+  .deposit-form-header{
+    font-size: 15px;
+  }
+  
+  .deposit-element{
+    margin: 14px 0 10px 0;
+    padding: 5px 12px;
+  }
+
+  .deposit-element__info p {
+    font-size: 10px;
+  }
+
+  .deposit-element__info h3 {
+    font-size: 15px;
+  }
+
+  .deposit-element img{
+    height: 11px;
+    margin-left: 20px;
+  }
 }

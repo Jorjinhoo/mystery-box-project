@@ -53,13 +53,17 @@
 
 
 .giveaway-card:hover .giveaway-card__img{
-  height: 100px;
+  height: 110px;
 }
 
 .giveaway-card__img{
-  height: 90px;
+  height: 100px;
   margin-right: 13px;
   transition: .3s;
+}
+
+#weekly-giveaway-card .giveaway-card__img{
+  border-radius: 6px;
 }
 
 
@@ -90,5 +94,13 @@
 
   .giveaway-card {
     margin-bottom: 8px; 
+  }
+
+  .giveaway-card:hover .giveaway-card__img{
+    height: 75px;
+  }
+  
+  .giveaway-card__img{
+    height: 75px;
   }
 }

@@ -1,10 +1,10 @@
 import React, {useState} from "react";
 
 import AccountItemCard from "./AccountItemCard.js";
+import ProfileCard from "./ProfileCard.js";
 
 
 import "./styles/account.css";
-import "./styles/profile-card.css";
 import "./styles/account-switches-group.css";
 
 
@@ -14,20 +14,7 @@ const Account = (props) =>{
 
   return(
     <main className="main" id="account-main">
-      <div className="account-container" id="profile-card-container">
-        <div className="profile-title">
-          <h1>YOUR PROFILE</h1>
-        </div>
-        <div className="profile-card">
-          <div className="profile-card__info">
-            <img src={props.accountLogo} alt="" className="profile-card-info__img" />
-            <div>
-              <h2 className="profile-card-info__name">TestUser123</h2>
-              <h4 className="profile-card-info__statistics">Cases opened: {props.casesOpened}</h4>
-            </div>
-          </div>
-        </div>
-      </div>
+      <ProfileCard accountLogo={props.accountLogo} casesOpened={props.casesOpened} />
       <div className="account-container" id="account-switches-group">
           <div className={`account-switches-group__switch ${activeSwitch === 'inventory' ? 'account-switches-group__switch-active' : ''}`} onClick={() => setActiveSwitch('inventory')} id="inventory-switch">
             <p>Inventory</p>

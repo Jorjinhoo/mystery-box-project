@@ -36,3 +36,44 @@
 .input-deposit:valid + .button-deposit:hover {
   opacity: .8;
 }
+
+
+@media screen and (max-width: 500px) {
+  .top-up-form{
+    padding: 10px 0 10px 10px;
+  }
+  
+  .input-deposit{
+    width: 240px;
+    padding-left: 3px;
+    border-radius: 5px;
+    font-size: 12px;
+  }
+  
+  .button-deposit{
+    padding: 8px;
+    border-radius: 5px;
+    margin-left: 8px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .top-up-form{
+    padding: 10px 0 10px 10px;
+  }
+  
+  .input-deposit{
+    height: 20px;
+    width: 160px;
+    padding-left: 3px;
+    border-radius: 5px;
+    font-size: 8px;
+  }
+  
+  .button-deposit{
+    padding: 4px;
+    border-radius: 5px;
+    margin-left: 5px;
+    font-size: 9px;
+  }
+}

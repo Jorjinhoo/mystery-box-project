@@ -24,3 +24,20 @@
   background-color: rgb(255, 166, 0);
   color: #fff;
 }
+
+
+@media screen and (max-width: 770px) {
+  .account-switches-group__switch {
+    margin: 0 10px 0 0;
+    padding: 8px 12px;
+  }
+}
+
+
+@media screen and (max-width: 580px) {
+  .account-switches-group__switch {
+    margin: 0 10px 0 0;
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+}
