@@ -12,7 +12,7 @@ const NavBarDesctop = (props) => {
   return(
     <div className="nav-menu">
       <div className="nav-menu__item" id="box">
-        <NavLink to="/" className="nav-menu-item__link">
+        <NavLink to="/mystery-box-project" className="nav-menu-item__link">
         < img src={box} alt="" className="nav-menu-item__icon" />
           <p id="balance">Cases</p>
         </NavLink>

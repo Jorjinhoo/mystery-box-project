@@ -11,6 +11,8 @@ import CaseOpeningPage from "./pages/case_opening_page/CaseOpeningPage.js";
 import DepositWindow from "./pop-up_windows/deposit_window/Deposit.js";
 import PromoStatus from "./pop-up_windows/deposit_window/PromoStatus.js";
 
+import "./main.css";
+
 import accountLogo from "./img/icons/account.png";
 
 
@@ -50,11 +52,12 @@ function App() {
 
         <DepositWindow visible={visible} setVisible={setVisible} setBalance={handleSetBalance} setPromoStatus={setPromoStatus} />
         <PromoStatus promoStatus={promoStatus} setPromoStatus={setPromoStatus} />
+
         
 
         <Routes>
 
-          <Route path="/" element={<Home />} />
+          <Route path="/mystery-box-project" element={<Home />} />
           <Route path="/pages/account_page/Account.js" element={<Account accountItems={accountItems} sellAccountItem={sellAccountItem} accountLogo={accountLogo} casesOpened={casesOpened} />} />
           <Route path="/pages/case_opening_page/CaseOpeningPage.js" element={<CaseOpeningPage balance={balance} setBalance={setBalance} addItemToAccount={addItemToAccount} />} />
 

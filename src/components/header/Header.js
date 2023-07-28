@@ -24,7 +24,7 @@ const Header = (props) => {
     <header className="header">
       <div className="container">
         <div className="nav-row">
-          <NavLink to="/" className="main-logo">EzzDrop</NavLink>
+          <NavLink to="/mystery-box-project" className="main-logo">EzzDrop</NavLink>
           {isMobileScreen ? (
             <NavBarMobile onWalletClick={props.onWalletClick} balance={props.balance} />
           ) : (

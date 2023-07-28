@@ -37,7 +37,7 @@ const NavBarMobile = (props) => {
         <ul className="mobile-menu__items">
           <li className="mobile-menu-items__item"><NavLink to={"/pages/account_page/Account.js"} onClick={handleMenuClick}>Account</NavLink></li>
           <li className="mobile-menu-items__item" onClick={handleWalletClick} >Deposit</li>
-          <li className="mobile-menu-items__item"><NavLink to={"/"} onClick={handleMenuClick}>Cases</NavLink></li>
+          <li className="mobile-menu-items__item"><NavLink to={"/mystery-box-project"} onClick={handleMenuClick}>Cases</NavLink></li>
         </ul>
       </div>
     </div>
