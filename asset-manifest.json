@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mystery-box-project/static/css/main.1ff9795f.css",
-    "main.js": "/mystery-box-project/static/js/main.366d05cf.js",
+    "main.js": "/mystery-box-project/static/js/main.c0e008db.js",
     "static/media/jordan1-chicago.png": "/mystery-box-project/static/media/jordan1-chicago.8142e7f60e57b2c829c5.png",
     "static/media/dior-white-bag.webp": "/mystery-box-project/static/media/dior-white-bag.58bd5080f067a230832b.webp",
     "static/media/tnf-puffer.webp": "/mystery-box-project/static/media/tnf-puffer.a5be1848b5e507c373cc.webp",
@@ -15,13 +15,13 @@
     "static/media/ps5.webp": "/mystery-box-project/static/media/ps5.8300dbc0ed40b226c200.webp",
     "static/media/iphone-14-white.webp": "/mystery-box-project/static/media/iphone-14-white.8bf64c53c601b539fa05.webp",
     "static/media/ipad-pro.jpg": "/mystery-box-project/static/media/ipad-pro.546c720e9288f0efdb1e.jpg",
-    "static/media/mastercard-visa.svg": "/mystery-box-project/static/media/mastercard-visa.45d5786d3a5e5b4885af65a798ab9d72.svg",
+    "static/media/mastercard-visa.svg": "/mystery-box-project/static/media/mastercard-visa.4998e2d1df923d374e3c8708def995b9.svg",
     "index.html": "/mystery-box-project/index.html",
     "main.1ff9795f.css.map": "/mystery-box-project/static/css/main.1ff9795f.css.map",
-    "main.366d05cf.js.map": "/mystery-box-project/static/js/main.366d05cf.js.map"
+    "main.c0e008db.js.map": "/mystery-box-project/static/js/main.c0e008db.js.map"
   },
   "entrypoints": [
     "static/css/main.1ff9795f.css",
-    "static/js/main.366d05cf.js"
+    "static/js/main.c0e008db.js"
   ]
 }
