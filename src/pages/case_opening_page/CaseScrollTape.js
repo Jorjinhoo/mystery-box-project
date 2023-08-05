@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-import "./styles/case-scroll-tape.css";
+import "./styles/case-scroll-tape.scss";
 
 import redPointer from "../../img/icons/red-pointer.png";
 
