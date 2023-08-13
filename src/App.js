@@ -11,8 +11,6 @@ import CaseOpeningPage from "./pages/case_opening_page/CaseOpeningPage.js";
 import DepositWindow from "./pop-up_windows/deposit_window/Deposit.js";
 import PromoStatus from "./pop-up_windows/deposit_window/PromoStatus.js";
 
-import "./main.css";
-
 import accountLogo from "./img/icons/account.png";
 
 
